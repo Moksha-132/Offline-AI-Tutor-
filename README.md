@@ -1,18 +1,18 @@
 # 🧠 RamXplain: The Ultimate Offline AI Learning Ecosystem
 
-**RamXplain** is a state-of-the-art, offline-first AI tutor designed to transform complex topics into deep, intuitive knowledge. Powered by local LLMs (**Ollama**) with a cloud fallback (**Google Gemini**), it offers a secure, private, and highly personalized learning experience wrapped in a stunning **Premium Dark UI**.
+**RamXplain** is a state-of-the-art, offline-first AI tutor designed to transform complex topics into deep, intuitiveknowledge. Powered by local LLMs (**Ollama**) , it offers a secure, private, and highly personalized learning experience wrapped in a stunning **Premium Dark UI**.
 
 ---
 
 ## 🌟 Key Features
 
-### � Premium User Experience
+### Premium User Experience
 *   **Cinematic Interface**: A "Glassmorphism" design system with animated gradients and lucid transparency effects.
 *   **Adaptive Theme**: High-contrast dark mode optimized for long study sessions.
 *   **Responsive Layout**: Fully optimized single-screen view for focused learning without infinite scrolling.
 
-### �🎓 Advanced Learning Modes
-*   **Mastery Pathway (Certified)**: A rigorous 3-stage (Beginner → Advanced → Expert) exhaustive guide that ends with a **Mastery Exam** and a **Shareable Certificate**.
+### 🎓 Advanced Learning Modes
+
 *   **Examiner POV**: Get feedback on your concepts from the perspective of an academic grader.
 *   **Viva Trainer**: Interactive oral exam simulation to prepare you for interviews and presentations.
 *   **Explain Like I'm...**: Tailor explanations for any audience—from a 10-year-old child to a technical interviewer.
@@ -24,8 +24,7 @@
     *   **Primary**: Purely Local & Private using **Ollama (Llama 3 / TinyLlama)**.
     *   **Fallback**: Seamless integration with **Google Gemini 2.0 Flash** for complex queries.
 *   **Robust Educational Safguards**: Explicitly tuned to handle advanced topics like **Deep Learning**, **Ethical Hacking**, and **Cybersecurity** without false safety refusals.
-*   **Interactive Quizzes**: Test your knowledge with dynamically generated exams and instant scoring.
-*   **Professional PDF Export**: Save your learning sessions or your earned **Mastery Certificates** as sleek, professionally designed PDFs.
+*   **Professional PDF Export**: Save your learning sessions as professionally designed PDFs.
 *   **Smart Audio Integration**: Listen to your explanations with variable speed controls (1x to 2.5x).
 *   **Persistent Learning History**: Comprehensive chat history tracking with user authentication.
 
