@@ -1,0 +1,29 @@
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+
+# Database
+*.db
+*.sqlite3
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Project specific
+static/audio/
+static/pdf/
+quiz_raw_output.txt
+model_list.txt
+start_ollama.bat
+debug_*.py
+test_*.py
+verify_*.py
+cleanup_flask.ps1

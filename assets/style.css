@@ -1,0 +1,237 @@
+/* --- Optimized Luxury Design System --- */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --bg-dark: #020617;
+    --card-bg: rgba(30, 41, 59, 0.4);
+    --accent: #d946ef;
+    /* Magenta/Purple blend */
+    --accent-glow: #c026d3;
+    --text-main: #ffffff;
+    --text-muted: #94a3b8;
+    --border: rgba(255, 255, 255, 0.1);
+}
+
+/* Animated Background */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.stApp {
+    background: linear-gradient(-45deg, #0f172a, #1e1b4b, #312e81, #0f172a);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: var(--text-main);
+    font-family: 'Outfit', sans-serif;
+}
+
+/* --- Speed Optimized Transitions --- */
+@keyframes instantEntrance {
+    0% {
+        opacity: 0;
+        transform: translateY(10px) scale(0.98);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.fade-in {
+    animation: instantEntrance 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* --- Branded Home Page --- */
+.premium-hero {
+    text-align: center;
+    padding: 2vh 20px 1vh 20px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Glowing Title */
+.branding-title {
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: -2px;
+    background: linear-gradient(135deg, #e879f9 0%, #a855f7 50%, #3b82f6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5rem;
+    line-height: 1.1;
+    filter: drop-shadow(0 0 30px rgba(168, 85, 247, 0.4));
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.premium-hero p {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    font-weight: 400;
+    max-width: 600px;
+    margin: 0 auto;
+    letter-spacing: 0.2px;
+}
+
+/* --- Compact Auth Section --- */
+/* --- Compact Auth Section --- */
+/* --- Compact Auth Section --- */
+.stTabs {
+    background: rgba(15, 23, 42, 0.6) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow:
+        0 25px 50px -12px rgba(0, 0, 0, 0.5),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
+    border-radius: 20px !important;
+    padding: 1.5rem 2rem !important;
+    margin-top: 1.5rem !important;
+    max-width: 400px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    animation: instantEntrance 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
+}
+
+/* Clean Widgets */
+/* Clean Widgets */
+.stTextInput input {
+    color: var(--text-main) !important;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 10px !important;
+    padding: 12px 15px !important;
+    min-height: 45px !important;
+    caret-color: var(--accent) !important;
+}
+
+.stTextInput input:focus {
+    border-color: var(--accent) !important;
+    box-shadow: 0 0 10px rgba(168, 85, 247, 0.2) !important;
+}
+
+.stButton>button {
+    background: linear-gradient(135deg, var(--accent), var(--accent-dark)) !important;
+    color: white !important;
+    border-radius: 10px !important;
+    padding: 10px 20px !important;
+    font-weight: 600 !important;
+    border: none !important;
+}
+
+[data-testid="stChatMessage"] {
+    background: rgba(30, 41, 59, 0.1) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 12px !important;
+    padding: 0.8rem !important;
+}
+
+/* --- Navigation Fixes --- */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(168, 85, 247, 0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    background: linear-gradient(to top, rgba(6, 9, 19, 0.9), transparent);
+    backdrop-filter: blur(5px);
+    z-index: 99;
+}
+
+.footer p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* --- Sidebar Chat History --- */
+[data-testid="stSidebar"] button {
+    background: transparent !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 8px !important;
+    color: var(--text-muted) !important;
+    text-align: left !important;
+    transition: all 0.2s ease !important;
+    margin-bottom: 5px !important;
+    justify-content: flex-start !important;
+    font-size: 0.9rem !important;
+}
+
+[data-testid="stSidebar"] button:hover {
+    background: rgba(168, 85, 247, 0.1) !important;
+    border-color: var(--accent) !important;
+    color: white !important;
+}
+
+/* New Chat Button Override */
+[data-testid="stSidebar"] button[kind="primary"] {
+    background: linear-gradient(135deg, var(--accent), var(--accent-dark)) !important;
+    color: white !important;
+    border: none !important;
+    font-weight: 600 !important;
+    margin-bottom: 20px !important;
+}
+
+/* --- Download Button --- */
+div.stDownloadButton>button {
+    background: transparent !important;
+    border: 1px solid var(--border) !important;
+    color: var(--text-muted) !important;
+    font-size: 0.8rem !important;
+    padding: 2px 12px !important;
+    border-radius: 6px !important;
+    margin-top: 5px !important;
+    opacity: 0.8;
+}
+
+div.stDownloadButton>button:hover {
+    border-color: var(--accent) !important;
+    color: var(--accent) !important;
+    opacity: 1;
+}

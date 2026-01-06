@@ -1,0 +1,7 @@
+streamlit
+requests
+pyttsx3
+pandas
+google-genai
+fpdf2
+flask
