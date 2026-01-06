@@ -4,7 +4,7 @@ from google import genai
 
 OLLAMA_BASE_URL = "http://127.0.0.1:11434/api"
 DEFAULT_MODEL = "llama3.2:1b" 
-GEMINI_API_KEY = "AIzaSyAzlbCghujpX2mp9f6dstOH-Ha26RhWNwI" # Integrated as requested
+GEMINI_API_KEY = "API KEY" # Integrated as requested
 
 def check_ollama():
     """Checks if Ollama is accessible."""
