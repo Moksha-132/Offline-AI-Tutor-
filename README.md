@@ -21,7 +21,7 @@
 
 ### ⚙️ Core Capabilities
 *   **Hybrid AI Engine**: 
-    *   **Primary**: Purely Local & Private using **Ollama (Llama 3 / TinyLlama)**.
+    *   **Primary**: Purely Local & Private using **Ollama (Llama 3 )**.
     *   **Fallback**: Seamless integration with **Google Gemini 2.0 Flash** for complex queries.
 *   **Robust Educational Safguards**: Explicitly tuned to handle advanced topics like **Deep Learning**, **Ethical Hacking**, and **Cybersecurity** without false safety refusals.
 *   **Professional PDF Export**: Save your learning sessions as professionally designed PDFs.
@@ -43,7 +43,7 @@ For the full offline experience, install Ollama:
 
 ### 2. Clone and Install Dependencies
 ```bash
-git clone <your-repo-url>
+git clone (https://github.com/Moksha-132/Offline-AI-Tutor-.git)
 cd AI-concept
 pip install -r requirements.txt
 ```
@@ -61,7 +61,7 @@ streamlit run streamlit_app.py
 - `streamlit_app.py`: Main application entry point.
 - `assets/`: Contains `style.css` for the custom design system.
 - `modules/`:
-    - `llm_manager.py`: Hybrid AI logic (Ollama + Gemini) with advanced prompt engineering.
+    - `llm_manager.py`: AI logic Ollama with advanced prompt engineering.
     - `ui.py`: Custom HTML/CSS components (Hero section, Audio player).
     - `adaptive_logic.py`: Quiz parsing and scoring algorithms.
     - `db_manager.py`: SQLite persistence for history and users.
