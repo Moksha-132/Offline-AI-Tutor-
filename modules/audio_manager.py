@@ -2,7 +2,7 @@ from google import genai
 import os
 
 # Using the same key used for tutoring
-GEMINI_API_KEY = "AIzaSyAzlbCghujpX2mp9f6dstOH-Ha26RhWNwI"
+GEMINI_API_KEY = "API KEY"
 
 class SpeechManager:
     def __init__(self):
